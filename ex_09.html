@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<p>목차</p>
+	      <ol>
+	         <li>
+	            <a href="./ex_01.html">h1~h6</a>
+	         </li>
+	         <li>
+	            <a href="./ex_02.html">p br blockquote q strong em</a>
+	         </li>
+	         <li>
+	            <a href="./ex_03.html">ol li, ul li</a>
+	         </li>
+	         <li>
+	            <a href="./ex_04.html">img a</a>
+	         </li>
+	         <li>
+	            <a href="./ex_05.html">기본 테이블 태그</a>
+	         </li>
+	         <li>
+	            <a href="./ex_06.html">테이블 셀 합치기</a>
+	         </li>
+	         <li>
+	            <a href="./ex_07.html">테이블 thead tbody tfoot colgroup</a>
+	         </li>
+	         <li>
+	            <a href="./ex_08.html">모집분야 예제2</a>
+	         </li>
+	         <li>
+	            <a href="./ex_09.html">폼 태그</a>
+	         </li>
+	      </ol>
+	      
+	   <hr>
+	   
+		<h1>html5</h1>
+		<h2>기본태그</h2>
+		<h3>폼 태그</h3>
+			
+			
+			<form>
+			
+				<label for="txt-hp">전화번호</label>
+				<input id="txt-hp" type="text" name="hp" value="" placeholder="전화번호">
+					<!-- name은 컴퓨터에 들어가는 저장항목/
+					value는 실제값/
+					type은 상자 유형(기능)/
+					placeholder는 클릭하면 없어짐/
+					id는 상자의 유형(이름)/
+					label은 입력하고자 하는 값의 제목으로 상자로 연동(상자의 유형, 이름을 알아야 함) -->
+				
+				<br>
+				
+				<label for="txt-nick">닉네임</label>
+				<input id="txt-nick" type="text" name="nick" value="" placeholder="닉네임">
+				
+				<br>
+				
+				<label for="txt-password">패스워드</label>
+				<input id="txt-password" type="password" placeholder="문자 숫자 특수기호">
+				
+				<br>
+				
+				<!-- 눈에 보이지 않음 -->
+				<input type="hidden" name="b-id" value="3">
+
+				<br>
+				
+				<label for="txt-file">프로필 사진</label>
+				<input id="txt-file" type="file">
+				
+				<br><br>
+				
+				<label for="chk-book">독서</label>
+				<input id="chk-book" type="checkbox" name="hobby" checked="checked">
+				
+				<label for="chk-music">음악</label>
+				<input id="chk-music" type="checkbox" name="hobby">
+				
+				<label for="chk-trip">여행</label>
+				<input id="chk-trip" type="checkbox" name="hobby">
+				
+				<br><br>
+				
+				<label for="chk-dog">개</label>
+				<input id="chk-dog" type="checkbox" name="pet" value="dog" checked="checked">
+				
+				<label for="chk-cat">고양이</label>
+				<input id="chk-cat" type="checkbox" name="pet" value="cat">
+				
+				<label for="chk-bird">새</label>
+				<input id="chk-bird" type="checkbox" name="pet" value="bird">
+				
+				<br><br>
+				
+				<label for="rdo-apple">사과</label>
+				<input id="rdo-apple" type="radio" name="fruit"  value="apple">
+				
+				<label for="rdo-grape">포도</label>
+				<input id="rdo-grape" type="radio" name="fruit" value="grape" checked="checked">
+				
+				<label for="rdo-orange">오렌지</label>
+				<input id="rdo-orange" type="radio" name="fruit" value="orange">
+				<!-- name 태그 통일 해놓지 않으면 다중 선택 가능해짐. *주의* -->
+				
+				<br><br>
+				
+				<label for="rdo-m1">1월</label>
+				<input id="rdo-m1" type="radio" name="month">
+				
+				<label for="rdo-m2">2월</label>
+				<input id="rdo-m2" type="radio" name="month">
+				
+				<label for="rdo-m3">3월</label>
+				<input id="rdo-m3" type="radio" name="month">
+				
+				<br><br>
+				
+				<label for="sel-telecom">통신사</label>
+				<select id="sel-telecom" name="telecom">
+					<option value="" selected="selected">통신사를 선택해 주세요.</option>
+					<option value="SKT">SKT</option>
+					<option value="KT">KT</option>
+					<option value="LGU+">LGU+</option>
+					<option value="etc">기타</option>
+				</select>
+				
+				<br><br>
+				
+					<textarea name="content">게시판 글입니다.</textarea>
+					<!-- <textarea>에서 위아래 간격 두면 결과물에 여백이 반영됨. *주의* -->
+					<!-- 게시판 크기 조절은 CSS 영역 -->
+				
+				<br><br>
+				
+				<button type="submit">회원가입</button>
+				<!-- <input type="submit" value="회원가입"> -->
+				<!-- 권장하지 않음 -->
+
+			
+			</form>
+			
+			
+	</body>
+</html>
